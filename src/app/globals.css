@@ -1,27 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* 
+@font-face {
+  font-family: 'Dujitsu';
+  src: url('/fonts/DujitsuFont-Demo.otf') format('opentype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'cantarell';
+  src: url('/fonts/tanmayee-cantarell-regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('/fonts/tanmayee-open-sans-light.ttf') format('opentype');
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #FFFFFF;
+  /* background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=#FDFBE2ff&noise=#454545&density=40&opacity=40); */
+  color: #000000;
+  font-family: 'open-sans';
+  scroll-behavior: smooth;
+}
+
+img {
+  user-select: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.ScrollStyle
+{
+  max-height: 470px;
+  overflow-y: scroll;
 }
